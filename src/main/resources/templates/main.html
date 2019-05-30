@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>MPHB [exercise]</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    	section{
+    		text-align: center;
+		    border: 1px solid #ccc;
+		    border-radius: 10px;
+		    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		    width: 35%;
+		    margin: 10% auto;
+		    padding: 20px;
+    	}
+    	img{
+    		 width: 71px;
+    	}
+    	h1{
+    		margin: 0;
+    	}
+    	form{
+    		margin: 30px;
+    	}
+    	ul{
+    		list-style: none;
+    		padding: 0px;
+    		margin: 0px;
+    	}
+    	input[type="submit"]{
+    		font-size: 20px;
+    		margin: 25px;
+    	}
+    </style>
+</head>
+<body>	
+	<section>
+		<img src="http://www.bomberoscsl.com/2018/wp-content/uploads/2017/09/weather-icon.png"/>
+	    <h1>Weather</h1>
+	    <a href="https://www.linkedin.com/in/pilarhdezbst/" target="_blank">by Pilar Hdez</a>
+	    
+	    <form th:action="@{/getWeather}" method="post">
+	    	<label>Select city:</label>
+	    
+	    	<ul>
+	            <li>
+	                <input type="radio" th:name="city" th:value="'London'"/>
+	                <label th:text="'London'"></label>
+	            </li>
+	            <li>
+	                <input type="radio" th:name="city" th:value="'Hong Kong'"/>
+	                <label th:text="'Hong Kong'"></label>
+	            </li>
+	        </ul>
+	    
+	    	<input name="submit" type="submit" value="submit" />
+	    </form>
+	</section>    
+</body>
+</html>

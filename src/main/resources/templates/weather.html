@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    	section{
+    		text-align: center;
+		    border: 1px solid #ccc;
+		    border-radius: 10px;
+		    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		    width: 35%;
+		    margin: 10% auto;
+		    padding: 20px;
+    	}
+    	h1{
+    		margin: 0;
+    	}
+    	table{
+    		margin: 0 auto;
+    	}
+ 		table, th, td {
+		    border: 1px solid black;
+		}
+    </style>
+</head>
+<body>
+	<section>
+		<h1>Weather - <span th:text="${city}"/> </h1>
+   
+	   <table>
+		  <tr>
+		    <td>Date</td>
+		    <td><p th:text="${today}"></p></td>
+		  </tr>
+		  <tr>
+		    <td>Description</td>
+		    <td><p th:text="${description}"></p></td>
+		  </tr>
+		  <tr>
+		    <td>Temperature °C</td>
+		    <td><p th:text="${tempC}"></p></td>
+		  </tr>
+		  <tr>
+		    <td>Temperature °F</td>
+		    <td><p th:text="${tempF}"></p></td>
+		  </tr>
+		  <tr>
+		    <td>Sunrise</td>
+		    <td><p th:text="${sunrise}"></p></td>
+		  </tr>
+		  <tr>
+		    <td>Sunset</td>
+		    <td><p th:text="${sunset}"></p></td>
+		  </tr>
+   		</table>
+	</section>
+</body>
+</html>
