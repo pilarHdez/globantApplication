@@ -80,6 +80,7 @@ The minimal unit tests to verify functionability were builded.
 TO DO:
 
 More tests can be added to improve the functionability. The more specific they are, the better the code quality is.
+
 Use the more appropiated annotations provided by Spring Boot to reduce verbosity in the the codebase.
 
 ## Author
