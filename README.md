@@ -66,9 +66,9 @@ http://localhost:8080/
 
 ## Built With
 
-* [SpringBoot](https://spring.io/projects/spring-boot) - The web framework used
+* [SpringBoot](https://spring.io/projects/spring-boot) - Elected Java Framework
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [Junit](https://junit.org/junit5/) - Unit Test framework
+* [Junit](https://junit.org/junit5/) - Unit Testing framework
 
 ## Author
 
