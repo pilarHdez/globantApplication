@@ -70,9 +70,19 @@ http://localhost:8080/
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Junit](https://junit.org/junit5/) - Unit Testing framework
 
+# Personal notes
+
+It was relatively easy to adopt Spring Boot coming from classic Spring. It really helps a lot in project setup.
+The backbone of the application is implemented with Spring MVC, Spring Web and Spring REST, meanwhile the UI is built with the help of Thymeleaf.
+
+The minimal unit tests to verify functionability were builded.
+
+TO DO:
+More tests can be added to improve the functionability. The more specific they are, the better the code quality is.
+Use the more appropiated annotations provided by Spring Boot to reduce verbosity in the the codebase.
+
 ## Author
 
 * **María del Pilar Hernández Bastida**
 
 pilarhdezbst91@gmail.com
-
