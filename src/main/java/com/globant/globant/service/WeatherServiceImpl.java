@@ -3,6 +3,7 @@ package com.globant.globant.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
@@ -37,7 +38,7 @@ public class WeatherServiceImpl implements WeatherService {
 					.accept(MediaType.APPLICATION_JSON).build();
 			ResponseEntity<T> exchange = this.restTemplate
 					.exchange(request, responseType);
-			weather = exchange.getBody();
+			weather = exchange.getStatusCode() == HttpStatus.OK ? exchange.getBody() : null;
 		} catch(Exception e){
 				logger.error("Error(WeatherServiceImpl):" + e.getMessage());
 		}
